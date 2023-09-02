@@ -16,6 +16,11 @@ while ($prg == true) {
             $newFileContent = str_replace("log", "console.log", $newFileContent);
             $newFileContent = str_replace("**", "document.querrySelectorAll", $newFileContent);
             $newFileContent = str_replace("*", "document.querrySelector", $newFileContent);
+            
+            $newFileContent = str_replace("Int", "let", $newFileContent);
+            $newFileContent = str_replace("String", "let", $newFileContent);
+            $newFileContent = str_replace("Bool", "let", $newFileContent);
+            $newFileContent = str_replace("Float", "let", $newFileContent);
             //echo $newFileContent;
 
             unlink($jsFileName);
