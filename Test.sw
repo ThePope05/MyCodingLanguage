@@ -18,3 +18,8 @@ __SetBackground(){
     log("Background is set");
     //log Is "console.log"
 }
+
+__SetTitle(newTitle){
+    Element titleEl = *("body > h1");
+    titleEl.InnerHTML = newTitle;
+}

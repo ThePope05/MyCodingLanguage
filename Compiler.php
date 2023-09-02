@@ -17,11 +17,12 @@ while ($prg == true) {
             $newFileContent = str_replace("**", "document.querrySelectorAll", $newFileContent);
             $newFileContent = str_replace("*", "document.querrySelector", $newFileContent);
             
+            //Variable types
             $newFileContent = str_replace("Int", "let", $newFileContent);
             $newFileContent = str_replace("String", "let", $newFileContent);
             $newFileContent = str_replace("Bool", "let", $newFileContent);
             $newFileContent = str_replace("Float", "let", $newFileContent);
-            //echo $newFileContent;
+            $newFileContent = str_replace("Element", "let", $newFileContent);
 
             unlink($jsFileName);
             $openFile = fopen($jsFileName, "w");

@@ -18,3 +18,8 @@ function SetBackground(){
     console.log("Background is set");
     //console.log Is "console.console.log"
 }
+
+function SetTitle(newTitle){
+    let titleEl = document.querrySelector("body > h1");
+    titleEl.InnerHTML = newTitle;
+}
